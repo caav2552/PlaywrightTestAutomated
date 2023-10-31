@@ -1,0 +1,30 @@
+{
+  "name": "playwrigthpoc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:e2e": "cucumber-js --require cucumber.conf.js --require tests/stepDefinitions/*.js --format @cucumber/pretty-formatter"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^7.3.1",
+    "@cucumber/pretty-formatter": "^1.0.0",
+    "@playwright/test": "^1.27.0",
+    "allure-playwright": "^2.0.0-beta.17",
+    "playwright": "^1.37.1"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "allure-js-commons": "^2.0.0-beta.17",
+    "dotenv": "^16.0.3",
+    "mkdirp": "^1.0.4",
+    "playwright-core": "^1.22.2",
+    "properties": "^1.2.1",
+    "uuid": "^8.3.2"
+  },
+  "description": ""
+}
