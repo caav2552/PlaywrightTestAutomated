@@ -42,25 +42,6 @@ class VideoPage {
     await this.wait();
   }
 
-  async viewProfilePatient(){
-    await expect(page.locator(this.txtPatientTitle)).toContainText('Patient');
-    await this.wait();
-  }
 
-  
-  async viewPatientDiagnosis(){
-    await expect(page.locator(this.diagnosisText)).toContainText('Diagnosis');
-    await this.wait(1000);
-  }
-  
-  // async viewPatientDiagnosisform(){
-  //   await expect(page.locator(this.newDiagnosisForm.diagnosisText)).toBeVisible();
-  //   await expect(page.locator(this.newDiagnosisForm.diagnosisDateText)).toBeVisible();
-  //   await expect(page.locator(this.newDiagnosisForm.usageText)).toBeVisible();
-  //   await expect(page.locator(this.newDiagnosisForm.providerText)).toBeVisible();
-  //   await expect(page.locator(this.newDiagnosisForm.ProvideNPIText)).toBeVisible();
-  //   await this.wait(1000);
-  // }
-  
 }
 module.exports = { VideoPage }
